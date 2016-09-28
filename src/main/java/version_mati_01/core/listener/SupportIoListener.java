@@ -1,9 +1,10 @@
 package version_mati_01.core.listener;
 
-import version_mati_01.core.polling.NioNodeIoProcessor;
+import version_mati_01.core.service.IoProcessor;
+import version_mati_01.core.session.IoSession;
 import version_mati_01.core.write.WriteRequest;
-import version_mati_01.structure.ClientSession;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /**
@@ -12,13 +13,22 @@ import java.nio.ByteBuffer;
 public interface SupportIoListener {
 
     // Filter session events
-    void fireSessionCreated(ClientSession session);
-    void fireMessageReceived(ClientSession session, ByteBuffer buf);
+    void fireSessionCreated(IoSession session);
+    void fireMessageReceived(IoSession session, ByteBuffer buf);
 
 
-    <S extends ClientSession> void fireSendMessage(NioNodeIoProcessor<S> sNioNodeIoProcessor, ClientSession session, WriteRequest writeRequest);
+    <S extends IoSession> void fireSendMessage(IoProcessor<S> processor, S session, WriteRequest writeRequest);
 
-    void fireMessageSent(ClientSession session, WriteRequest writeRequest);
+    void fireMessageSent(IoSession session, WriteRequest writeRequest);
 
-    void fireExceptionCaught(ClientSession session,String message,Exception e);
+    void fireInputClosed(IoSession session);
+
+    void fireSessionDestroyed(IoSession session);
+
+    void fireExceptionCaught(IoSession session, String message, Exception e);
+
+    // metodo solo para testeo, despues esto no deberia ir acá
+    int filterRead(IoSession session, ByteBuffer buf) throws IOException;
+    // metodo solo para testeo, despues esto no deberia ir acá
+    int filterWrite(IoSession session, ByteBuffer buf) throws IOException;
 }

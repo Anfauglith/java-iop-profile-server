@@ -1,12 +1,11 @@
 package version_mati_01.core.service;
 
 
+import version_mati_01.configuration.ServerPortType;
 import version_mati_01.core.listener.SupportIoListener;
 import version_mati_01.core.session.IoSession;
 import version_mati_01.core.write.WriteRequest;
-import version_mati_01.structure.ClientSession;
-
-import java.io.IOException;
+import version_mati_01.structure.session.BaseSession;
 
 /**
  * An internal interface to represent an 'I/O processor' that performs
@@ -64,7 +63,7 @@ public interface IoProcessor<S extends IoSession> {
      * @param session The session we want the message to be written
      * @param writeRequest the WriteRequest to write
      */
-    void write(ClientSession session, WriteRequest writeRequest);
+    void write(BaseSession session, WriteRequest writeRequest);
 
     /**
      * Controls the traffic of the specified {@code session} depending of the
@@ -85,5 +84,13 @@ public interface IoProcessor<S extends IoSession> {
      */
     void remove(S session);
 
+
+    void setSupportIoListener(SupportIoListener supportIoListener);
+
+    SupportIoListener getSupportIoListener();
+
+    Runnable startupProcessorRunnable();
+
+    void scheduleFlush(S session);
 
 }

@@ -1,7 +1,5 @@
 package version_mati_01.core.write;
 
-import version_mati_01.core.filter.IoFilter;
-
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 

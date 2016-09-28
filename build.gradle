@@ -12,7 +12,14 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 
-// https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.21'
+
+    // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.0.0'
+
+    compile 'commons-configuration:commons-configuration:1.10'
+    // Berkeley db
+    compile files('libs/je-7.0.6.jar')
 
 }

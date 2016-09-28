@@ -1,6 +1,10 @@
-import version_mati_01.NioNodeServer;
-import version_mati_01.core.service.IoHandler;
-import version_mati_01.core.session.IoSession;
+import version_mati_01.NodeServer;
+import version_mati_01.configuration.ServerPortType;
+import version_mati_01.structure.filters.protocol.ProtobufDecoderFilter;
+import version_mati_01.structure.filters.protocol.ProtobufEncoderFilter;
+import version_mati_01.structure.handlers.CPHandler;
+import version_mati_01.structure.handlers.NCPHandler;
+import version_mati_01.structure.handlers.PPHandler;
 
 /**
  * Created by mati on 08/09/16.
@@ -10,53 +14,39 @@ public class main {
 
     public static void main(String[] args){
 
-        NioNodeServer nioNodeServer = new NioNodeServer();
-        nioNodeServer.setIoHandler(new IoHandler() {
-            @Override
-            public void sessionCreated(IoSession session) throws Exception {
-                System.out.println("Creé una nueva sesion!!");
-            }
-
-            @Override
-            public void sessionOpened(IoSession session) throws Exception {
-
-            }
-
-            @Override
-            public void sessionClosed(IoSession session) throws Exception {
-                System.out.println("Cerré una sesion!!");
-            }
-
-            @Override
-            public void exceptionCaught(IoSession session, Throwable cause) throws Exception {
-                cause.printStackTrace();
-            }
-
-            @Override
-            public void messageReceived(IoSession session, Object message) throws Exception {
-                System.out.println("Mensaje llegó: " + message);
-                System.out.println("Ahora voy a enviar uno..");
-                String messageToReplay = "todo ok!";
-                session.write(messageToReplay);
-            }
-
-            @Override
-            public void messageSent(IoSession session, Object message) throws Exception {
-                System.out.println("Mandé un mensaje: " + message);
-            }
-
-            @Override
-            public void inputClosed(IoSession session) throws Exception {
-
-            }
-        });
-
         try {
+
+            NodeServer nioNodeServer = new NodeServer();
+            // Protocol encoder
+            nioNodeServer.setProtocolEncoderFilter(new ProtobufEncoderFilter());
+            // Protocol decoder
+            nioNodeServer.setProtocolDecoderFilter(new ProtobufDecoderFilter());
+            // Primary handler
+            nioNodeServer.registerIoHandler(ServerPortType.PRIMARY, new PPHandler(nioNodeServer));
+            // Non-customer handler
+            nioNodeServer.registerIoHandler(ServerPortType.NON_CUSTOMER, new NCPHandler());
+            // Customer handler
+            nioNodeServer.registerIoHandler(ServerPortType.CUSTOMER, new CPHandler());
+            // Primary port
+            nioNodeServer.addServerPort(ServerPortType.PRIMARY);
+            // Non-customer port
+            nioNodeServer.addServerPort(ServerPortType.NON_CUSTOMER);
+            // Customer port
+            nioNodeServer.addServerPort(ServerPortType.CUSTOMER);
+            // Primary Processors
+            nioNodeServer.addIoProcessor(ServerPortType.PRIMARY, 2);
+            // Non-customer Processor
+            nioNodeServer.addIoProcessor(ServerPortType.NON_CUSTOMER, 2);
+            // Customer Processor
+            nioNodeServer.addIoProcessor(ServerPortType.CUSTOMER, Runtime.getRuntime().availableProcessors());
+            // Start
             nioNodeServer.start();
-        } catch (Exception e) {
+
+        }catch (Exception e){
             e.printStackTrace();
         }
 
     }
+
 
 }

@@ -8,4 +8,6 @@ public interface IoSessionConfig {
     int getReadBufferSize();
 
     int getMaxReadBufferSize();
+
+    int getWriteBufferSize();
 }
