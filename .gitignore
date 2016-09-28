@@ -12,3 +12,5 @@ bin/
 .clover
 META-INF/
 .gradle
+.idea
+build
