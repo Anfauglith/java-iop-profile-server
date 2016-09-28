@@ -1,11 +1,11 @@
 package stress_clients;
 
 import com.google.protobuf.ByteString;
-import version_mati_01.ssl.SslContextFactory;
-import version_mati_01.structure.filters.protocol.ProtobufDecoderFilter;
-import version_mati_01.structure.filters.protocol.ProtobufEncoderFilter;
-import version_mati_01.structure.messages.MessageFactory;
-import version_mati_01.structure.protos.TestProto3;
+import version_01.ssl.SslContextFactory;
+import version_01.structure.filters.protocol.ProtobufDecoderFilter;
+import version_01.structure.filters.protocol.ProtobufEncoderFilter;
+import version_01.structure.messages.MessageFactory;
+import version_01.structure.protos.TestProto3;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;

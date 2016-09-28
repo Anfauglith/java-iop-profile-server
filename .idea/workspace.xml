@@ -1,132 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc4eb913-6695-4ff9-81ed-66463d4d516f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ConfigurationManagerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/CustomerServerPortConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NonCustomerServerPortConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PrimaryServerPortConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ServerPortType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ConfigurationManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortConfigurationAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ServerPortConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/executor/ExecutorFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/AbstractProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionAttributeMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/SessionCloseException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentitiesDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentityView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/exceptions/CantSaveIdentityException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslContextFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilterManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/client/SslEchoClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/server/SslEchoServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/ExecutorFilterManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/WorkerTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufEncoderFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslContextFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/CPHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NCPHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioIoProcessorManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptorManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/messages/MessageFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/CIoProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/PPortProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/ReadManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/WriteManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoReadProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoWriteProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto32.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultIoSessionAttributeMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/IoSessionIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/util/AttributeKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/util/ConfigurationsUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/util/DirResourcesFilesPathUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioIoProcessorManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioIoProcessorManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioNodeAcceptor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioNodeAcceptor$Acceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioNodeAcceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/NioNodeServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/configuration/NodeConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/configuration/NodeConfigurationImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/filter/FilterTypes.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/filter/IoFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/filter/IoFilterChain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/filter/IoFilterChainBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/polling/NioNodeIoProcessor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/polling/NioNodeIoProcessor$IoSessionIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/polling/NioNodeIoProcessor$Processor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/polling/NioNodeIoProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/ClientSession.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultFilterChainBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultIoFilterChain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultSessionConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultSupportIoListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultWriteRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/DefaultWriteRequestQueu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/filters/ProtocolDecoderFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/filters/ProtocolEncoderFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/filters/StringDecoderFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/structure/filters/StringEncoderFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/NioIoProcessorManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/NioNodeServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NodeConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NodeConfigurationImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/FilterTypes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/IoFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/IoFilterChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/IoFilterChainBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/NioNodeIoProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultFilterChainBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultIoFilterChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultSupportIoListener.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/NioNodeAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/ClientSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/BaseSession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultSessionConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultWriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/DefaultWriteRequestQueu.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequestQueu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ProtocolDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolDecoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ProtocolEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolEncoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/StringDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringDecoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/StringEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringEncoderFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/main.class" afterPath="$PROJECT_DIR$/build/classes/main/main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/listener/SupportIoListener.class" afterPath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/listener/SupportIoListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoProcessor.class" afterPath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoService.class" afterPath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSession.class" afterPath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSession.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSessionConfig.class" afterPath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSessionConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/node_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/node_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/node_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/node_test.iml" />
+    <list default="true" id="dc4eb913-6695-4ff9-81ed-66463d4d516f" name="Default" comment="First pr, java--furszy-node!">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/NodeServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ConfigurationManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/CustomerServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NonCustomerServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PrimaryServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ServerPortType.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/ServerPortType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ConfigurationManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortConfigurationAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortType.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/ServerPortConfiguration.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolDecoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolEncoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/executor/ExecutorFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/executor/ExecutorFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/listener/SupportIoListener.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/listener/SupportIoListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/AbstractProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionAttributeMap.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionAttributeMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/SessionState.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/SessionState.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/SessionCloseException.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/SessionCloseException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteFuture.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteFuture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequestQueue.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteRequestQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentitiesDao.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentityView.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/exceptions/CantSaveIdentityException.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityData.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityKey.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslContextFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslContextFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilterManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilterManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/client/SslEchoClient.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/client/SslEchoClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/server/SslEchoServer.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/server/SslEchoServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringDecoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringEncoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/ExecutorFilterManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/WorkerTask.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/WorkerTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufEncoderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslContextFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslContextFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslExample.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslExample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/CPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/CPHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NCPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/NCPHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/PPHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/FilterDispatcher.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioIoProcessorManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptorManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptorManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/messages/MessageFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/CIoProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/PPortProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/ReadManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/ReadManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/WriteManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/WriteManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoReadProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoWriteProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoWriteProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto32.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto32.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/BaseSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/BaseSession.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultIoSessionAttributeMap.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultIoSessionAttributeMap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultSessionConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequestQueu.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequestQueu.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/IoSessionIterator.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/IoSessionIterator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/AttributeKey.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/AttributeKey.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/ConfigurationsUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/ConfigurationsUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/DirResourcesFilesPathUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/DirResourcesFilesPathUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/SessionUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/SessionUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/listener/SupportIoListener.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/listener/SupportIoListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" />
     </list>
     <ignored path="node.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,28 +117,7 @@
     <favorites_list name="node" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="NodeServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -471,7 +404,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/CustomerPortHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NonCustomerPortHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/executor/ExecutorFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/AbstractPortConfiguration.java" />
@@ -522,6 +454,7 @@
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NioNodeServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -563,7 +496,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -658,14 +593,242 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="version_mati_01" />
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="write" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="session" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="version_01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,7 +895,7 @@
     <configuration default="false" name="TestProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="version_mati_01.structure.protos.*" />
+          <option name="PATTERN" value="version_01.structure.protos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -752,11 +915,11 @@
     <configuration default="false" name="ProtobufEncoderFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="version_mati_01.structure.filters.protocol.*" />
+          <option name="PATTERN" value="version_01.structure.filters.protocol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="version_mati_01.structure.filters.protocol.ProtobufEncoderFilter" />
+      <option name="MAIN_CLASS_NAME" value="version_01.structure.filters.protocol.ProtobufEncoderFilter" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1122,7 +1285,28 @@
       <option name="project" value="LOCAL" />
       <updated>1473694090298</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First pr, java--furszy-node!">
+      <created>1475072673682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1475072673682</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First pr, java--furszy-node!">
+      <created>1475072747218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1475072747218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First pr, java--furszy-node!">
+      <created>1475072799916</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1475072799916</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1137,7 +1321,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23225807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44731182" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2548387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2344086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1197,31 +1381,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First pr, java-node" />
-    <option name="LAST_COMMIT_MESSAGE" value="First pr, java-node" />
+    <MESSAGE value="First pr, java--furszy-node!" />
+    <option name="LAST_COMMIT_MESSAGE" value="First pr, java--furszy-node!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java</url>
           <line>79</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="88" />
@@ -1236,28 +1415,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultSessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequestQueu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequestQueu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
@@ -1292,140 +1464,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentityView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/exceptions/CantSaveIdentityException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentitiesDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/PPortProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/CIoProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/AbstractProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
           <caret line="392" column="45" selection-start-line="392" selection-start-column="45" selection-end-line="392" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/ExecutorFilterManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ServerPortConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortConfigurationAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NonCustomerServerPortConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PrimaryServerPortConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/configuration/CustomerServerPortConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ConfigurationManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ConfigurationManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
           <caret line="125" column="38" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/util/ConfigurationsUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ConfigurationsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/BaseSession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/BaseSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/util/SessionUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/SessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
@@ -1434,14 +1606,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/IopHomeNodeProto3.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3Proto3.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto32.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto32.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
           <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
@@ -1449,7 +1622,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
@@ -1457,7 +1630,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilterManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilterManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
@@ -1465,14 +1638,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="17964" column="29" selection-start-line="17964" selection-start-column="29" selection-end-line="17964" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -1480,7 +1654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufEncoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufEncoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -1488,7 +1662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringDecoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringDecoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -1496,7 +1670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringEncoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringEncoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -1504,31 +1678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NCPHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/CPHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityKey.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
@@ -1536,7 +1686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/messages/MessageFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
@@ -1544,7 +1694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoReadProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
@@ -1552,39 +1702,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioIoProcessorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/NodeServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
@@ -1596,6 +1714,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/FilterDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/CPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/NCPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/PPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>

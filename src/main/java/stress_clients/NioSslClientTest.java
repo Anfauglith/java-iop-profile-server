@@ -1,6 +1,6 @@
 package stress_clients;
 
-import version_mati_01.ssl.SslContextFactory;
+import version_01.ssl.SslContextFactory;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
