@@ -39,4 +39,13 @@ public class IdentitiesDao {
 
     }
 
+    /**
+     *
+     * @param id is the hash of the identity's public key
+     * @return
+     */
+    public boolean isIdentityOnline(byte[] id){
+        return identityView.getIdentityMap().containsKey(new IdentityKey(id));
+    }
+
 }

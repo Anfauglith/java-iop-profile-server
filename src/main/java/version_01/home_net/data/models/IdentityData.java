@@ -29,6 +29,8 @@ public class IdentityData implements Serializable {
     private long initialLocationEncoded;
     /** User defined extra data that serve for satisfying search queries in HomeNet. */
     private String extraData;
+    /**  */
+    private boolean isOnline;
 
     public IdentityData(byte[] identityId, byte[] publicKey, byte[] version, String name, String type, byte[] picture, long initialLocationEncoded, String extraData) {
         this.identityId = identityId;
@@ -39,6 +41,10 @@ public class IdentityData implements Serializable {
         this.picture = picture;
         this.initialLocationEncoded = initialLocationEncoded;
         this.extraData = extraData;
+    }
+
+    public void setOnline(boolean online) {
+        isOnline = online;
     }
 
     public byte[] getIdentityId() {
@@ -71,6 +77,10 @@ public class IdentityData implements Serializable {
 
     public String getExtraData() {
         return extraData;
+    }
+
+    public boolean isOnline() {
+        return isOnline;
     }
 
     @Override
