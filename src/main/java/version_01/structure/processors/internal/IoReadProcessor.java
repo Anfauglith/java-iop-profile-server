@@ -13,7 +13,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ByteChannel;
 
 /**
- * Created by Matias Furszyfer on 17/09/16.
+ * Created by Matias Furszyferas Furszyfer on 17/09/16.
  *
  * Clase helper con los metodos de lectura y el procesamiento de la misma de una determinada session entregada por parametro.
  */

@@ -1,9 +1,11 @@
-package version_01.structure.handlers;
+package version_01.structure.logic.handlers;
 
+import com.google.protobuf.ByteString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import version_01.core.service.IoHandler;
 import version_01.core.session.IoSession;
+import version_01.structure.messages.MessageFactory;
 import version_01.structure.protos.TestProto3;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -11,20 +13,23 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by mati on 24/09/16.
  */
-public class NCPHandler implements IoHandler {
+public class CPHandler implements IoHandler{
 
     /** A logger for this class */
-    private final static Logger LOG = LoggerFactory.getLogger(NCPHandler.class);
-
-    public static String VERSION = "1";
+    private final static Logger LOG = LoggerFactory.getLogger(CPHandler.class);
 
     static AtomicInteger openSessions = new AtomicInteger(0);
     static AtomicInteger closedSessions = new AtomicInteger(0);
 
+    public static String PING_RESPONSE_PAYLOAD = "pong";
+    public static String VERSION = "1";
+
+    private HandlerDispatcherImp dispatcher;
+
     @Override
     public void sessionCreated(IoSession session) throws Exception {
-        LOG.debug("NON-CUSTOMER, Creé una nueva sesion!!");
-        LOG.info("NON-CUSTOMER, Cantidad de sesiones en puerto primario abiertas: "+ openSessions.incrementAndGet());
+        LOG.debug("Puerto customer, Creé una nueva sesion!!");
+        LOG.info("Puerto customer, Cantidad de sesiones abiertas: "+ openSessions.incrementAndGet());
     }
 
     @Override
@@ -34,9 +39,9 @@ public class NCPHandler implements IoHandler {
 
     @Override
     public void sessionClosed(IoSession session) throws Exception {
-        LOG.debug("NON-CUSTOMER, Cerré una sesion!!");
+        LOG.debug("Cerré una sesion!!");
         openSessions.decrementAndGet();
-        LOG.info("Cantidad de sesiones en puerto NON-CUSTOMER cerradas: "+ closedSessions.incrementAndGet());
+        LOG.info("Cantidad de sesiones cerradas: "+ closedSessions.incrementAndGet());
     }
 
     @Override
@@ -46,20 +51,22 @@ public class NCPHandler implements IoHandler {
 
     @Override
     public void messageReceived(IoSession session, Object message) throws Exception {
-        LOG.info("Puerto NON-CUSTOMER, mensaje llegó: " + message);
-        LOG.info("Ahora voy a responder..");
+        LOG.info("Puerto customer, Mensaje llegó: " + message);
+        LOG.info("Puerto customer, Ahora voy a enviar uno..");
         if (message instanceof TestProto3.Message) {
-            //acá va el homeNodeRequestRequest..
+            TestProto3.Message messageToResponse = MessageFactory.buildPingResponseMessage(TestProto3.PingResponse.newBuilder().setPayload(ByteString.copyFromUtf8(PING_RESPONSE_PAYLOAD)).build(),VERSION);
+            session.write(messageToResponse);
         }
+
     }
 
     @Override
     public void messageSent(IoSession session, Object message) throws Exception {
-        LOG.info("Puerto NON-CUSTOMER, Mandé un mensaje: " + message);
+        LOG.info("Puerto customer, Mandé un mensaje: " + message);
     }
 
     @Override
     public void inputClosed(IoSession session) throws Exception {
-        LOG.info("Puerto NON-CUSTOMER, InputClosed: "+session);
+        LOG.info("Puerto customer, InputClosed: "+session);
     }
 }

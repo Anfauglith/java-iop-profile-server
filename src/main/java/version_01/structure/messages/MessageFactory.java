@@ -79,12 +79,16 @@ public class MessageFactory {
         return TestProto3.HomeNodePlanContract.newBuilder().setIdentityPublicKey(ByteString.copyFromUtf8(identityPk)).setNodePublicKey(ByteString.copyFromUtf8(nodePk)).setStartTime(startTime).setPlan(plan).build();
     }
 
-    public static TestProto3.HomeNodeRequestRequest buildHomeNodeRequestRequest(TestProto3.HomeNodePlanContract contract){
-        return TestProto3.HomeNodeRequestRequest.newBuilder().setContract(contract).build();
+    public static TestProto3.Message buildHomeNodeRequestRequest(TestProto3.HomeNodePlanContract contract){
+        TestProto3.HomeNodeRequestRequest homeNodeRequestRequest = TestProto3.HomeNodeRequestRequest.newBuilder().setContract(contract).build();
+        TestProto3.ConversationRequest.Builder conversaBuilder = TestProto3.ConversationRequest.newBuilder().setHomeNodeRequest(homeNodeRequestRequest);
+        return buildMessage(conversaBuilder);
     }
 
-    public static TestProto3.HomeNodeRequestResponse buildHomeNodeRequestResponse(TestProto3.HomeNodePlanContract contract){
-        return TestProto3.HomeNodeRequestResponse.newBuilder().setContract(contract).build();
+    public static TestProto3.Message buildHomeNodeResponseRequest(TestProto3.HomeNodePlanContract contract){
+        TestProto3.HomeNodeRequestResponse homeNodeRequestRequest = TestProto3.HomeNodeRequestResponse.newBuilder().setContract(contract).build();
+        TestProto3.ConversationResponse.Builder conversaBuilder = TestProto3.ConversationResponse.newBuilder().setHomeNodeRequest(homeNodeRequestRequest);
+        return buildMessage(conversaBuilder);
     }
 
     /**
@@ -93,6 +97,11 @@ public class MessageFactory {
 
     private static TestProto3.Message buildMessage(TestProto3.SingleRequest.Builder singleRequest){
         TestProto3.Request.Builder requestBuilder = TestProto3.Request.newBuilder().setSingleRequest(singleRequest);
+        return buildMessage(requestBuilder);
+    }
+
+    private static TestProto3.Message buildMessage(TestProto3.ConversationRequest.Builder conversationRequest){
+        TestProto3.Request.Builder requestBuilder = TestProto3.Request.newBuilder().setConversationRequest(conversationRequest);
         return buildMessage(requestBuilder);
     }
 
@@ -110,5 +119,13 @@ public class MessageFactory {
         TestProto3.Message.Builder messageBuilder = TestProto3.Message.newBuilder().setResponse(response);
         return messageBuilder.build();
     }
+
+    private static TestProto3.Message buildMessage(TestProto3.ConversationResponse.Builder conversationResponse) {
+        TestProto3.Response.Builder requestBuilder = TestProto3.Response.newBuilder().setConversationResponse(conversationResponse);
+        return buildMessage(requestBuilder);
+    }
+
+
+
 
 }

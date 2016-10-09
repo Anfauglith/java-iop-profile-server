@@ -6,7 +6,7 @@ import version_01.core.session.IoSession;
 import java.io.IOException;
 
 /**
- * Created by mati on 09/09/16.
+ * Created by Matias Furszyfer on 09/09/16.
  */
 public interface IoHandler {
 
@@ -55,7 +55,7 @@ public interface IoHandler {
     /**
      * Invoked when any exception is thrown by user {@link version_mina_01.core.service.IoHandler}
      * implementation or by MINA.  If <code>cause</code> is an instance of
-     * {@link IOException}, MINA will close the connection automatically.
+     * {@link IOException}, MINA will close the connection autoMatias Furszyfercally.
      *
      * @param session The session for which we have got an exception
      * @param cause The exception that has been caught

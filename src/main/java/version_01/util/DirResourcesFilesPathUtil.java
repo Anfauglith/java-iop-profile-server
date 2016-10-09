@@ -22,13 +22,15 @@ public class DirResourcesFilesPathUtil {
 
     /**
      * Es el mismo que arriba más un path que se le agrega.
+     * si no existe se crea uno.
      * ejemplo: .concat(FILE_SYSTEM_SEPARATOR).concat("node").concat(FILE_SYSTEM_SEPARATOR).concat("resources")
      * @param pathToAdd
      * @return
      */
     public static String getExternalStoregaDirectory(String pathToAdd){
-        String path = System.getProperty("user.home").concat(FILE_SYSTEM_SEPARATOR).concat(".mati-iop-node")+pathToAdd;
+        String path = getExternalStorageDirectory()+pathToAdd.concat(FILE_SYSTEM_SEPARATOR);
         File dir = new File(path);
+        if (!dir.exists()) dir.mkdir();
         return dir.getAbsolutePath().concat(FILE_SYSTEM_SEPARATOR);
     }
 

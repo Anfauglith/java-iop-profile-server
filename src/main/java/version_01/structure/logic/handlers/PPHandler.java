@@ -1,4 +1,4 @@
-package version_01.structure.handlers;
+package version_01.structure.logic.handlers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

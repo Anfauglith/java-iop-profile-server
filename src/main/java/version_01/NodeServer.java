@@ -11,12 +11,14 @@ import version_01.configuration.ServerPortType;
 import version_01.core.service.IoHandler;
 import version_01.core.service.IoProcessor;
 import version_01.core.service.IoService;
+import version_01.home_net.data.db.DatabaseFactory;
 import version_01.structure.internal.FilterDispatcher;
 import version_01.core.filter.base.ProtocolDecoderFilter;
 import version_01.core.filter.base.ProtocolEncoderFilter;
 import version_01.structure.internal.NioIoProcessorManager;
 import version_01.structure.internal.NioNodeAcceptorManager;
 import version_01.util.ConfigurationsUtil;
+import version_01.util.DirResourcesFilesPathUtil;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -42,7 +44,8 @@ public class NodeServer implements IoService{
     private ConfigurationManager configurationManager;
     /** ServerPortTypes configurations cached */
     private Map<ServerPortType,ServerPortConfiguration> portsConfigurationMap;
-
+    /** Database */
+    private DatabaseFactory databaseFactory;
 
     public NodeServer() throws IOException, ConfigurationException {
         handlers = new HashMap<>();
@@ -51,6 +54,7 @@ public class NodeServer implements IoService{
         nioNodeIoProcessor = new NioIoProcessorManager(this);
         // Default event manager
         supportIoListener = new FilterDispatcher();
+        // Configurations
         configurationManager = new ConfigurationManagerImpl();
         if(!configurationManager.exist()){
             configurationManager.create();
@@ -73,6 +77,7 @@ public class NodeServer implements IoService{
     private void defaultInit(){
         nioNodeIoProcessor.addSupportIoListener(ServerPortType.PRIMARY,supportIoListener);
         nioNodeIoProcessor.addSupportIoListener(ServerPortType.CUSTOMER,supportIoListener);
+        nioNodeIoProcessor.addSupportIoListener(ServerPortType.NON_CUSTOMER,supportIoListener);
     }
 
     public void addServerPort(ServerPortType serverPortType){
@@ -83,6 +88,14 @@ public class NodeServer implements IoService{
 
     public void addIoProcessor(ServerPortType serverPortType,int processorsCount){
         nioNodeIoProcessor.manageServerRole(serverPortType,processorsCount);
+    }
+
+    public void setConfigurationManager(ConfigurationManager configurationManager) {
+        this.configurationManager = configurationManager;
+    }
+
+    public void setDatabaseFactory(DatabaseFactory databaseFactory) {
+        this.databaseFactory = databaseFactory;
     }
 
     @Override

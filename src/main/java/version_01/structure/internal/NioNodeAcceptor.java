@@ -208,7 +208,7 @@ public class NioNodeAcceptor {
                         // add session to the waiting new session queue
                         ioService.getIoProcessor().add(s);
                     }catch (Exception e){
-                        LOG.error("Exception main acceptor loop of: "+serverPortType,e);
+                        LOG.error("Exception Main acceptor loop of: "+serverPortType,e);
                     }
 
 //                try {

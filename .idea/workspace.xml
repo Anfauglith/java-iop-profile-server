@@ -1,86 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc4eb913-6695-4ff9-81ed-66463d4d516f" name="Default" comment="First pr, java--furszy-node!">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/NodeServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ConfigurationManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/CustomerServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NonCustomerServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PrimaryServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ServerPortType.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/ServerPortType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ConfigurationManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortConfigurationAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortType.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ServerPortConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/conf/ServerPortConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolDecoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/base/ProtocolEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolEncoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/executor/ExecutorFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/executor/ExecutorFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/listener/SupportIoListener.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/listener/SupportIoListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/AbstractProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionAttributeMap.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionAttributeMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/IoSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/session/SessionState.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/session/SessionState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/SessionCloseException.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/SessionCloseException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteFuture.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteFuture.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/core/write/WriteRequestQueue.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/write/WriteRequestQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentitiesDao.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentityView.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/exceptions/CantSaveIdentityException.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityData.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityKey.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslContextFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslContextFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslFilterManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilterManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/SslManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/SslManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/client/SslEchoClient.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/client/SslEchoClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/ssl/server/SslEchoServer.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/ssl/server/SslEchoServer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringDecoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringEncoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/ExecutorFilterManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/executor/WorkerTask.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/WorkerTask.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufEncoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufEncoderFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/SslHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslContextFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslContextFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ssl/test/SslExample.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/CPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/CPHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NCPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/NCPHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/PPHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/FilterDispatcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioIoProcessorManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptorManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptorManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/messages/MessageFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/CIoProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/PPortProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/ReadManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/ReadManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/interfaces/WriteManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/WriteManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoReadProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoWriteProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoWriteProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto32.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto32.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/BaseSession.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/BaseSession.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultIoSessionAttributeMap.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultIoSessionAttributeMap.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultSessionConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequest.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequestQueu.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequestQueu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/IoSessionIterator.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/session/IoSessionIterator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/AttributeKey.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/AttributeKey.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/ConfigurationsUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/ConfigurationsUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/DirResourcesFilesPathUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/DirResourcesFilesPathUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_mati_01/util/SessionUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/SessionUtil.java" />
+    <list default="true" id="dc4eb913-6695-4ff9-81ed-66463d4d516f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/logic/HandlerDispatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/HandlerDispatcherImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/ClassScope.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/listener/SupportIoListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/service/IoService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/IoSessionConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/session/SessionState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/write/WriteFuture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/write/WriteRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/core/write/WriteRequestQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/version_mati_01/util/SessionUtil.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/CPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/CPHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/NCPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/NCPHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/handlers/PPHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/PPHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/node_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/node_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/node_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/node_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main.java" afterPath="$PROJECT_DIR$/src/main/java/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" afterPath="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/NodeServer.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/NodeServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/configuration/ServerPortType.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/configuration/ServerPortType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolDecoderFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/version_01/util/DirResourcesFilesPathUtil.java" afterPath="$PROJECT_DIR$/src/main/java/version_01/util/DirResourcesFilesPathUtil.java" />
     </list>
     <ignored path="node.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +56,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/node$main.coverage" NAME="main Coverage Results" MODIFIED="1474678471572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/node$main.coverage" NAME="main Coverage Results" MODIFIED="1475514245559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -117,13 +78,117 @@
     <favorites_list name="node" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassScope.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ClassScope.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CIoProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CantSaveIdentityException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArraysUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ArraysUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CPHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/CPHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigurationManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigurationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -304,7 +369,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2948203464170" />
+        <entry key="$PROJECT_DIR$" value="2949434140678" />
         <entry key="$USER_HOME$/Escritorio/fermat-node/fermat" value="23531338051948" />
       </map>
     </option>
@@ -404,57 +469,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NonCustomerPortHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/filter/executor/ExecutorFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/AbstractPortConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PortConfigurationAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ServerPortType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultWriteRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/session/DefaultSessionConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/Identity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityData.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/DatabaseFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentityView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/exceptions/CantSaveIdentityException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/models/IdentityKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/home_net/data/db/IdentitiesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/polling/AbstractProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/ClientIoProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/PrimaryPortProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/FilterManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ConfigurationManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/ServerPortConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/conf/PortConfigurationAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/NonCustomerServerPortConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/PrimaryServerPortConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/CustomerServerPortConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/core/service/IoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NioNodeAcceptorManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PrimaryPortHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration/ConfigurationManagerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NioIoProcessorManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/util/ConfigurationsUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/IopHomeNodeProto3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto32.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/ProtobufDecoderFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3Proto3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/messages/MessageFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/protocol/ProtobufEncoderFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/filters/basic/StringEncoderFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/PPHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/handlers/NCPHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/processors/internal/IoReadProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/NioNodeAcceptorManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/structure/internal/FilterDispatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NioNodeServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/version_mati_01/NodeServer.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/ssl/SslManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilterManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/SslFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/ssl/server/SslEchoServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/ssl/client/SslEchoClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslContextFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/write/SessionCloseException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/conf/ServerPortConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/ReadManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolEncoderFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufEncoderFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/PPHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/NodeServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptorManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stress_clients/NioClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/NCPHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoWriteProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/session/IoSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/logic/HandlerDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/HandlerDispatcherImp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/internal/FilterDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/filter/executor/ExecutorFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/CPHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java" />
       </list>
     </option>
   </component>
@@ -496,9 +561,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -506,6 +568,10 @@
               <option name="myItemId" value="node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -528,6 +594,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crypto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,7 +719,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,11 +749,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="write" />
+              <option name="myItemId" value="structure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -687,41 +779,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="structure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="session" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="version_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="logic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -751,45 +813,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="structure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="polling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
+              <option name="myItemId" value="logic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="version_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
+              <option name="myItemId" value="crypto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -803,46 +835,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="version_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="je-7.0.6.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25776756" />
-    <property name="SearchEverywhereHistoryKey" value="Protobu&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/filters/ProtobufDecoderFilter.java&#10;IoProcessorReadManager&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/processors/internal/IoProcessorReadManager.java&#10;BaseSe&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/BaseSession.java&#10;Session&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/ClientSession.java&#10;SSLF&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilter.java&#10;SslFilter&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilter.java&#10;SslManager&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslManager.java&#10;ClientSess&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/ClientSession.java&#10;WriteRequestQu&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/DefaultWriteRequestQueu.java&#10;SSLMA&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilterManager.java&#10;SslMa&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslManager.java&#10;IoSes&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_01/core/session/IoSession.java" />
+    <property name="SearchEverywhereHistoryKey" value="MessageFactory&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_01/structure/messages/MessageFactory.java&#10;NCPHandler&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_01/structure/handlers/NCPHandler.java&#10;Protobu&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/filters/ProtobufDecoderFilter.java&#10;IoProcessorReadManager&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/processors/internal/IoProcessorReadManager.java&#10;BaseSe&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/BaseSession.java&#10;Session&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/ClientSession.java&#10;SSLF&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilter.java&#10;SslFilter&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilter.java&#10;SslManager&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslManager.java&#10;ClientSess&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/session/ClientSession.java&#10;WriteRequestQu&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/structure/DefaultWriteRequestQueu.java&#10;SSLMA&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslFilterManager.java&#10;SslMa&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_mati_01/ssl_sample/SslManager.java&#10;IoSes&#9;FILE&#9;file:///home/mati/Documentos/apache-mina/node/src/main/java/version_01/core/session/IoSession.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/version_mati_01/configuration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../proyectors/kalium" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="version_01.structure.logic.crypto.libstodium" />
+      <recent name="version_mati_01.structure.nio_io_processor" />
+      <recent name="version_01.configuration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="version_mati_01.structure.protos" />
@@ -851,95 +885,122 @@
       <recent name="stress_clients" />
       <recent name="version_mati_01.structure.filters" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="version_mati_01.structure.nio_io_processor" />
-      <recent name="version_01.configuration" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/src/main/java/version_01/structure/logic/crypto/libstodium" />
+      <recent name="$PROJECT_DIR$/src/main/java/version_01/structure/logic/crypto" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
-    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="KeyEd25519Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="crypto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="node_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crypto" />
+      <option name="MAIN_CLASS_NAME" value="crypto.KeyEd25519Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="KeyEd25519Test.testSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="crypto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="node_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crypto" />
+      <option name="MAIN_CLASS_NAME" value="crypto.KeyEd25519Test" />
+      <option name="METHOD_NAME" value="testSetup" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="KeyEd25519Test.testSetup2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="crypto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="node_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crypto" />
+      <option name="MAIN_CLASS_NAME" value="crypto.KeyEd25519Test" />
+      <option name="METHOD_NAME" value="testSetup2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="crypto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="node_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="crypto" />
+      <option name="MAIN_CLASS_NAME" value="crypto.KeyEd25519Test" />
+      <option name="METHOD_NAME" value="test_signAndVerifyMessage_Ed25519" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="node_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="NioSslClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stress_clients.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="stress_clients.NioSslClientTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="node_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestProto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="version_01.structure.protos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="version_mati_01.structure.protos.TestProto" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="node_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProtobufEncoderFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="version_01.structure.filters.protocol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="version_01.structure.filters.protocol.ProtobufEncoderFilter" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="node_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="NioSslPingClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stress_clients.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="stress_clients.NioSslPingClientTest" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1042,6 +1103,15 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1242,24 +1312,24 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NioSslClientTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestProto" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ProtobufEncoderFilter" />
-      <item index="4" class="java.lang.String" itemvalue="Application.NioSslPingClientTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.testSetup" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.testSetup2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.test_signAndVerifyMessage_Ed25519" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NioSslPingClientTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NioSslClientTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ProtobufEncoderFilter" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestProto" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.test_signAndVerifyMessage_Ed25519" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.testSetup" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test.testSetup2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KeyEd25519Test" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1474814548371" />
+    <option name="lastUpdateTimestamp" value="1476045218565" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1306,8 +1376,82 @@
       <option name="project" value="LOCAL" />
       <updated>1475072799916</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First pr, java--furszy-node!">
+      <created>1475077100186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1475077100186</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ed25519 implemented">
+      <created>1476052966935</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476052966935</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ed25519 test case">
+      <created>1476052978315</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1476052978315</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Util class">
+      <created>1476052997201</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1476052997201</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Crypto helpers">
+      <created>1476053009021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1476053009021</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Db and model minor changes">
+      <created>1476053039813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1476053039813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 18h 50m 45s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 18h 53m 00s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 18h 53m 05s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 12m 39s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 15m 05s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 17m 19s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 17m 28s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 19m 43s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 20m 33s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyEd25519Test_test_signAndVerifyMessage_Ed25519 - 2016.10.09 at 19h 42m 11s.xml">
+      <configuration name="KeyEd25519Test.test_signAndVerifyMessage_Ed25519" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1320,12 +1464,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23225807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2548387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38064516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60537636" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2344086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2299613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22940852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1338,7 +1483,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1382,7 +1526,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First pr, java-node" />
     <MESSAGE value="First pr, java--furszy-node!" />
-    <option name="LAST_COMMIT_MESSAGE" value="First pr, java--furszy-node!" />
+    <MESSAGE value="Ed25519 implemented" />
+    <MESSAGE value="Ed25519 test case" />
+    <MESSAGE value="Util class" />
+    <MESSAGE value="Crypto helpers" />
+    <MESSAGE value="Db and model minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Db and model minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1405,8 +1554,14 @@
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/crypto/libstodium/Sodium.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="89" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1415,369 +1570,418 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/ssl/test/SslContextFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/DefaultWriteRequestQueu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/write/SessionCloseException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/je-7.0.6.jar!/com/sleepycat/bind/serial/ClassCatalog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/je-7.0.6.jar!/com/sleepycat/bind/serial/SerialBinding.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/je-7.0.6.jar!/com/sleepycat/collections/StoredSortedMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/PPortProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="109" column="53" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="392" column="45" selection-start-line="392" selection-start-column="45" selection-end-line="392" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/service/IoHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="125" column="38" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ConfigurationsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/session/BaseSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/SessionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/IopHomeNodeProto3.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_mati_01/structure/protos/TestProto3Proto3.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto32.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/ServerPortType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/interfaces/ReadManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/filter/base/ProtocolEncoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/ssl/SslFilterManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="17964" column="29" selection-start-line="17964" selection-start-column="29" selection-end-line="17964" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufDecoderFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/protocol/ProtobufEncoderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringDecoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/PrimaryServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/basic/StringEncoderFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/primary/PrimaryProcessorWriteManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/PPHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="75">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/PortType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoReadProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/NonCustomerServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/node_test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/NodeServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/PortConfigurationAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stress_clients/NioSslPingClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/node_main.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stress_clients/NioSslClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptorManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioNodeAcceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stress_clients/NioClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/NCPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/messages/MessageFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/internal/IoWriteProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/session/IoSessionConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/session/IoSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/service/IoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentityView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/models/IdentityData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/IdentitiesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/protos/TestProto3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="2413" column="4" selection-start-line="2413" selection-start-column="4" selection-end-line="2413" selection-end-column="4" />
+          <folding>
+            <element signature="e#697134#697135#0" expanded="true" />
+            <element signature="e#697162#697163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/HandlerDispatcherImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="113" column="55" selection-start-line="113" selection-start-column="55" selection-end-line="113" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/HandlerDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/FilterDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/CPHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/filters/executor/ExecutorFilterManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/NCPHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/filter/executor/ExecutorFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/handlers/PPHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/DatabaseFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/CustomerServerPortConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/internal/NioIoProcessorManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/DirResourcesFilesPathUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="435">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/logic/handlers/CPHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/configuration/ConfigurationManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/conf/ConfigurationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ClassScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/structure/processors/CIoProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/home_net/data/db/exceptions/CantSaveIdentityException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/util/ArraysUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/version_01/core/polling/AbstractProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1802,7 +2006,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25776756" />
               </list>
             </option>
           </splitter-proportions>
@@ -1833,7 +2037,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>node_main|node</last-edited>
+          <last-edited>node_test|node</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1861,7 +2065,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.25776756" />
               </list>
             </option>
           </splitter-proportions>
