@@ -8,6 +8,7 @@ import version_01.core.service.IoProcessor;
 import version_01.core.session.IoSession;
 import version_01.core.session.IoSessionAttributeMap;
 import version_01.core.session.IoSessionConfig;
+import version_01.core.write.SessionCloseException;
 import version_01.core.write.WriteRequest;
 import version_01.util.SessionUtil;
 import version_01.core.write.WriteRequestQueue;
@@ -152,7 +153,7 @@ public class BaseSession implements IoSession{
      * @throws Exception
      */
     @Override
-    public void write(Object message) throws Exception {
+    public void write(Object message) throws SessionCloseException {
         if (message == null) {
             throw new IllegalArgumentException("Trying to write a null message : not allowed");
         }
@@ -167,7 +168,7 @@ public class BaseSession implements IoSession{
 //            WriteException writeException = new WriteToClosedSessionException(request);
 //            future.setException(writeException);
 //            return future;
-            throw new Exception("Connection is not available");
+            throw new SessionCloseException("Connection is not available");
         }
 
         WriteRequest writeRequest = new DefaultWriteRequest(message);
@@ -179,6 +180,8 @@ public class BaseSession implements IoSession{
     @Override
     public void close() {
         LOG.info("session close, id: "+getId());
+        setScheduledForFlush(true);
+
     }
 
     public boolean setScheduledForFlush(boolean schedule) {

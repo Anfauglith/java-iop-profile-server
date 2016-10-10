@@ -92,8 +92,23 @@ public class MessageFactory {
     }
 
     /**
+     * Error messages
+     */
+
+
+    public static TestProto3.Message buildInvalidMessageHeaderResponse(){
+        return buildMessage(TestProto3.Status.ERROR_PROTOCOL_VIOLATION);
+    }
+
+
+
+    /**
      *  Private builders
      */
+
+    private static TestProto3.Message buildMessage(TestProto3.Status responseStatus){
+        return buildMessage(TestProto3.Response.newBuilder().setStatus(responseStatus));
+    }
 
     private static TestProto3.Message buildMessage(TestProto3.SingleRequest.Builder singleRequest){
         TestProto3.Request.Builder requestBuilder = TestProto3.Request.newBuilder().setSingleRequest(singleRequest);

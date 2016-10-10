@@ -13,12 +13,11 @@ import version_01.core.service.IoProcessor;
 import version_01.core.service.IoService;
 import version_01.home_net.data.db.DatabaseFactory;
 import version_01.structure.internal.FilterDispatcher;
-import version_01.core.filter.base.ProtocolDecoderFilter;
-import version_01.core.filter.base.ProtocolEncoderFilter;
+import version_01.core.filter.protocol.ProtocolDecoderFilter;
+import version_01.core.filter.protocol.ProtocolEncoderFilter;
 import version_01.structure.internal.NioIoProcessorManager;
 import version_01.structure.internal.NioNodeAcceptorManager;
 import version_01.util.ConfigurationsUtil;
-import version_01.util.DirResourcesFilesPathUtil;
 
 import java.io.IOException;
 import java.util.Collection;

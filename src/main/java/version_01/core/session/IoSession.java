@@ -2,6 +2,7 @@ package version_01.core.session;
 
 
 import version_01.core.service.IoHandler;
+import version_01.core.write.SessionCloseException;
 import version_01.core.write.WriteRequest;
 import version_01.core.write.WriteRequestQueue;
 
@@ -21,7 +22,7 @@ public interface IoSession {
 
     boolean isActive();
 
-    void write(Object message) throws Exception;
+    void write(Object message) throws SessionCloseException;
 
     void close();
 

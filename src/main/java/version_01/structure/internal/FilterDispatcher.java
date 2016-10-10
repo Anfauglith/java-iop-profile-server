@@ -3,15 +3,17 @@ package version_01.structure.internal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import version_01.core.filter.executor.ExecutorFilter;
+import version_01.core.filter.protocol.InvalidProtocolViolation;
 import version_01.core.listener.SupportIoListener;
 import version_01.core.service.IoProcessor;
 import version_01.core.session.IoSession;
+import version_01.core.write.SessionCloseException;
 import version_01.core.write.WriteRequest;
 import version_01.ssl.SslFilterManager;
-import version_01.core.filter.base.ProtocolDecoderFilter;
-import version_01.core.filter.base.ProtocolEncoderFilter;
+import version_01.core.filter.protocol.ProtocolDecoderFilter;
+import version_01.core.filter.protocol.ProtocolEncoderFilter;
 import version_01.structure.filters.executor.ExecutorFilterManager;
-
+import version_01.structure.messages.MessageFactory;
 
 
 import java.io.IOException;
@@ -116,6 +118,14 @@ public class FilterDispatcher implements SupportIoListener{
         if (protocolDecoderFilter!=null) {
             try {
                 o = protocolDecoderFilter.decode(buf);
+            } catch (InvalidProtocolViolation e){
+                try {
+                    session.write(MessageFactory.buildInvalidMessageHeaderResponse());
+                    // close session , todo: acá deberia ver si llega a enviar el mensaje antes de cerrar la sesión.
+                    session.close();
+                } catch (SessionCloseException e1) {
+                    // nothing to do the session is already closed..
+                }
             } catch (Exception e) {
                 launchEventException(session, "ProtocolDecoder exception", e);
             }
