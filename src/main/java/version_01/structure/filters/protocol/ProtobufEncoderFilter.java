@@ -3,7 +3,7 @@ package version_01.structure.filters.protocol;
 import com.google.protobuf.ByteString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import version_01.core.filter.base.ProtocolEncoderFilter;
+import version_01.core.filter.protocol.ProtocolEncoderFilter;
 import version_01.structure.protos.TestProto3;
 
 import java.nio.ByteBuffer;

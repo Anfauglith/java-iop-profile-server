@@ -1,4 +1,4 @@
-package version_01.core.filter.base;
+package version_01.core.filter.protocol;
 
 import java.nio.ByteBuffer;
 
@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
  */
 public abstract class ProtocolDecoderFilter<T> {
 
-    public abstract T decode(ByteBuffer byteBuffer);
+    public abstract T decode(ByteBuffer byteBuffer) throws InvalidProtocolViolation;
 
 
 }

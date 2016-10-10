@@ -1,6 +1,6 @@
 package version_01.structure.filters.basic;
 
-import version_01.core.filter.base.ProtocolDecoderFilter;
+import version_01.core.filter.protocol.ProtocolDecoderFilter;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
