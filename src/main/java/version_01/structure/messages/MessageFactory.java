@@ -85,9 +85,17 @@ public class MessageFactory {
         return buildMessage(conversaBuilder);
     }
 
-    public static TestProto3.Message buildHomeNodeResponseRequest(TestProto3.HomeNodePlanContract contract){
+    public static TestProto3.Message buildHomeNodeResponseRequest(TestProto3.HomeNodePlanContract contract,String signature){
         TestProto3.HomeNodeRequestResponse homeNodeRequestRequest = TestProto3.HomeNodeRequestResponse.newBuilder().setContract(contract).build();
         TestProto3.ConversationResponse.Builder conversaBuilder = TestProto3.ConversationResponse.newBuilder().setHomeNodeRequest(homeNodeRequestRequest);
+        conversaBuilder.setSignature(ByteString.copyFromUtf8(signature));
+        return buildMessage(conversaBuilder);
+    }
+
+    public static TestProto3.Message buildCheckInResponse(String signature){
+        TestProto3.CheckInResponse checkInResponse = TestProto3.CheckInResponse.newBuilder().build();
+        TestProto3.ConversationResponse.Builder conversaBuilder = TestProto3.ConversationResponse.newBuilder().setCheckIn(checkInResponse);
+        conversaBuilder.setSignature(ByteString.copyFromUtf8(signature));
         return buildMessage(conversaBuilder);
     }
 
@@ -100,6 +108,10 @@ public class MessageFactory {
         return buildMessage(TestProto3.Status.ERROR_PROTOCOL_VIOLATION);
     }
 
+    public static TestProto3.Message buildVersionNotSupportResponse() {
+        // todo: Creo que se devuelve el unnsopported cuando la versión no es valida, deberia chequear esto..
+        return buildMessage(TestProto3.Status.ERROR_UNSUPPORTED);
+    }
 
 
     /**
@@ -139,8 +151,6 @@ public class MessageFactory {
         TestProto3.Response.Builder requestBuilder = TestProto3.Response.newBuilder().setConversationResponse(conversationResponse);
         return buildMessage(requestBuilder);
     }
-
-
 
 
 }
