@@ -19,6 +19,9 @@ public interface IoSession {
 
     IoHandler getIoHandler();
 
+    boolean isConversationStarted();
+
+    void setConversationStarted(boolean isConcersationStarted);
 
     boolean isActive();
 
@@ -59,4 +62,23 @@ public interface IoSession {
     Object getAttribute(Object key);
 
     void addWriteRequest(WriteRequest writeRequest);
+
+    long getLastIdleTime(IdleStatus status);
+
+    IoSessionConfig getConfig();
+
+    long getLastIoTime();
+
+    long getLastReadTime();
+
+    long getLastWriteTime();
+
+    WriteRequest getCurrentWriteRequest();
+
+    void setCurrentWriteRequest(WriteRequest writeRequest);
+
+
+    void increaseIdleCount(IdleStatus status, long currentTimeMillis);
+
+    boolean hasTobeClosed(long currentTime);
 }

@@ -1,6 +1,7 @@
 package version_01.core.listener;
 
 import version_01.core.service.IoProcessor;
+import version_01.core.session.IdleStatus;
 import version_01.core.session.IoSession;
 import version_01.core.write.WriteRequest;
 
@@ -31,4 +32,6 @@ public interface SupportIoListener {
     int filterRead(IoSession session, ByteBuffer buf) throws IOException;
     // metodo solo para testeo, despues esto no deberia ir acá
     int filterWrite(IoSession session, ByteBuffer buf) throws IOException;
+
+    void fireSessionIdle(IoSession session,IdleStatus status);
 }

@@ -10,4 +10,18 @@ public interface IoSessionConfig {
     int getMaxReadBufferSize();
 
     int getWriteBufferSize();
+
+    /**
+     * Get socket timeout in millis
+     * @return
+     */
+    int getSocketTimeout();
+
+    int getIdleTime(IdleStatus status);
+
+    long getIdleTimeInMillis(IdleStatus idleStatus);
+
+    long getWriteTimeoutInMillis();
+
+    int getSocketReadBufferSize();
 }

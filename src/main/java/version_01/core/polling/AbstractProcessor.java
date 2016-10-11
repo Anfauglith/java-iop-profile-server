@@ -46,11 +46,16 @@ public abstract class AbstractProcessor<S extends IoSession> implements IoProces
      * sessions
      */
     private static final long SELECT_TIMEOUT = 1000L;
+
+    private static final long IDLE_TIMEOUT = 60000L;
+
     /** Helpers Managers */
     private ReadManager readManager;
     private WriteManager writeManager;
     /** status flags */
     private AtomicBoolean isRunning = new AtomicBoolean();
+
+    private long lastIdleCheckTime;
 
     public AbstractProcessor(IoService ioService, int id, ReadManager readManager, WriteManager writeManager) {
         this.processorId = id;
@@ -463,6 +468,22 @@ public abstract class AbstractProcessor<S extends IoSession> implements IoProces
         }
     }
 
+    private void notifyIdleSessions(long currentTime) throws Exception {
+        // process idle sessions
+        if (currentTime - lastIdleCheckTime >= SELECT_TIMEOUT) {
+            lastIdleCheckTime = currentTime;
+            BaseSession.notifyIdleness(allSessions(), currentTime,supportIoListener);
+        }
+    }
+
+    private void checkIdleSessions(long currentTime){
+        // process idle sessions
+        if (currentTime - lastIdleCheckTime >= IDLE_TIMEOUT) {
+            lastIdleCheckTime = currentTime;
+            BaseSession.notifyIdleness(allSessions(), currentTime,supportIoListener);
+        }
+    }
+
     private class Processor implements Runnable{
 
         @Override
@@ -524,6 +545,9 @@ public abstract class AbstractProcessor<S extends IoSession> implements IoProces
 
                     // Last, not least, write Idle events to the idle sessions
 //                    notifyIdleSessions(currentTime);
+
+                    // check if have to close sessions
+                    checkIdleSessions(currentTime);
 
                     // Get a chance to exit the infinite loop if there are no
                     // more sessions on this Processor

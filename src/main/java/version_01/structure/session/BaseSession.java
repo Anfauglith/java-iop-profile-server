@@ -3,13 +3,16 @@ package version_01.structure.session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import version_01.configuration.ServerPortType;
+import version_01.core.listener.SupportIoListener;
 import version_01.core.service.IoHandler;
 import version_01.core.service.IoProcessor;
+import version_01.core.session.IdleStatus;
 import version_01.core.session.IoSession;
 import version_01.core.session.IoSessionAttributeMap;
 import version_01.core.session.IoSessionConfig;
 import version_01.core.write.SessionCloseException;
 import version_01.core.write.WriteRequest;
+import version_01.core.write.WriteTimeoutException;
 import version_01.util.SessionUtil;
 import version_01.core.write.WriteRequestQueue;
 
@@ -18,8 +21,10 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.SocketChannel;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by mati on 09/09/16.
@@ -43,6 +48,8 @@ public class BaseSession implements IoSession{
     /** Session Role */
     private ServerPortType serverPortType;
 
+    private AtomicBoolean conversationStarted = new AtomicBoolean(false);
+
     //Status variables
     private AtomicBoolean scheduledForFlush = new AtomicBoolean();;
     private boolean readSuspended;
@@ -62,6 +69,20 @@ public class BaseSession implements IoSession{
     /** Flag to set to true when SSL is enabled */
     private boolean isSecure;
 
+    private long creationTime;
+    private long lastReadTime;
+    private long lastWriteTime;
+
+    /** Idle counters */
+    private AtomicInteger idleCountForBoth = new AtomicInteger(0);
+    private AtomicInteger idleCountForRead = new AtomicInteger(0);
+    private AtomicInteger idleCountForWrite = new AtomicInteger(0);
+    /** Idle time */
+    private long lastIdleTimeForBoth;
+    private long lastIdleTimeForRead;
+    private long lastIdleTimeForWrite;
+
+
 
     public static BaseSession clientSessionFactory(ServerPortType serverPortType, SocketChannel socketChannel, IoHandler ioHandler, IoSessionConfig defaultSessionConfig, WriteRequestQueue writeRequestQueue){
         return new BaseSession(SessionUtil.sessionIdGenerator(),serverPortType,socketChannel,ioHandler,defaultSessionConfig,writeRequestQueue);
@@ -76,6 +97,7 @@ public class BaseSession implements IoSession{
         this.serverPortType = serverPortType;
     }
 
+
     @Override
     public long getId() {
         return sessionId;
@@ -84,6 +106,11 @@ public class BaseSession implements IoSession{
     @Override
     public IoHandler getIoHandler() {
         return handler;
+    }
+
+    @Override
+    public boolean isConversationStarted() {
+        return conversationStarted.get();
     }
 
     public IoProcessor getProcessor() {
@@ -144,6 +171,10 @@ public class BaseSession implements IoSession{
     }
 
 
+    public void setConversationStarted(boolean isConcersationStarted) {
+        this.conversationStarted.set(isConcersationStarted);
+    }
+
     /**
      *  Metodo para armar el writeRequest.
      *  El mensaje llega luego de ser filtrado por los distintos Decoder y filtros.
@@ -196,6 +227,75 @@ public class BaseSession implements IoSession{
         return true;
     }
 
+    /**
+     * in the specified collection.
+     *
+     * @param sessions The sessions that are notified
+     * @param currentTime the current time (i.e. {@link System#currentTimeMillis()})
+     */
+    public static void notifyIdleness(Iterator<? extends IoSession> sessions, long currentTime,SupportIoListener supportIoListener) {
+        while (sessions.hasNext()) {
+            IoSession session = sessions.next();
+
+            if (session.isActive()) {
+                //notifyIdleSession(session, currentTime,supportIoListener);
+                checkIdleSession(session,currentTime,supportIoListener);
+            }
+        }
+    }
+
+    private static void checkIdleSession(IoSession session, long currentTime, SupportIoListener supportIoListener) {
+        if (session.hasTobeClosed(currentTime)){
+            // close session
+            session.closeNow();
+        }
+    }
+
+    /**
+     * Fires a {@link} event if applicable for the
+     * specified {@code session}.
+     *
+     * @param session The session that is notified
+     * @param currentTime the current time (i.e. {@link System#currentTimeMillis()})
+     */
+    public static void notifyIdleSession(IoSession session, long currentTime, SupportIoListener supportIoListener) {
+        notifyIdleSession0(session, currentTime, session.getConfig().getIdleTimeInMillis(IdleStatus.BOTH_IDLE),
+                IdleStatus.BOTH_IDLE, Math.max(session.getLastIoTime(), session.getLastIdleTime(IdleStatus.BOTH_IDLE)),supportIoListener);
+
+        notifyIdleSession0(session, currentTime, session.getConfig().getIdleTimeInMillis(IdleStatus.READER_IDLE),
+                IdleStatus.READER_IDLE,
+                Math.max(session.getLastReadTime(), session.getLastIdleTime(IdleStatus.READER_IDLE)),supportIoListener);
+
+        notifyIdleSession0(session, currentTime, session.getConfig().getIdleTimeInMillis(IdleStatus.WRITER_IDLE),
+                IdleStatus.WRITER_IDLE,
+                Math.max(session.getLastWriteTime(), session.getLastIdleTime(IdleStatus.WRITER_IDLE)),supportIoListener);
+
+        notifyWriteTimeout(session, currentTime,supportIoListener);
+    }
+
+    private static void notifyIdleSession0(IoSession session, long currentTime, long idleTime, IdleStatus status, long lastIoTime,SupportIoListener supportIoListener) {
+        if ((idleTime > 0) && (lastIoTime != 0) && (currentTime - lastIoTime >= idleTime)) {
+            supportIoListener.fireSessionIdle(session,status);
+        }
+    }
+
+    private static void notifyWriteTimeout(IoSession session, long currentTime,SupportIoListener supportIoListener) {
+
+        long writeTimeout = session.getConfig().getWriteTimeoutInMillis();
+        if ((writeTimeout > 0) && (currentTime - session.getLastWriteTime() >= writeTimeout)
+                && !session.getWriteRequestQueue().isEmpty()) {
+            WriteRequest request = session.getCurrentWriteRequest();
+            if (request != null) {
+                session.setCurrentWriteRequest(null);
+                WriteTimeoutException cause = new WriteTimeoutException("WriteRequest: "+request.toString());
+                request.getFuture().setException(cause);
+                supportIoListener.fireExceptionCaught(session,"",cause);
+                // WriteException is an IOException, so we close the session.
+                session.close();
+            }
+        }
+    }
+
     public SocketChannel getChannel() {
         return socketChannel;
     }
@@ -230,6 +330,158 @@ public class BaseSession implements IoSession{
 
     public void decreaseReadBufferSize() {
         //todo hacer esto
+    }
+
+
+    /**
+     * {@inheritDoc}
+     */
+    public final long getCreationTime() {
+        return creationTime;
+    }
+    /**
+     * {@inheritDoc}
+     */
+    public final long getLastIoTime() {
+        return Math.max(lastReadTime, lastWriteTime);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final long getLastReadTime() {
+        return lastReadTime;
+    }
+
+    /**
+     * Check if this session has to be closed
+     *
+     * @param currentTime
+     * @return
+     */
+    public final boolean hasTobeClosed(long currentTime){
+        return  (!isScheduledForFlush() && currentTime-lastWriteTime>config.getIdleTimeInMillis(IdleStatus.WRITER_IDLE) && currentTime-lastReadTime>config.getIdleTimeInMillis(IdleStatus.READER_IDLE));
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final long getLastWriteTime() {
+        return lastWriteTime;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final boolean isIdle(IdleStatus status) {
+        if (status == IdleStatus.BOTH_IDLE) {
+            return idleCountForBoth.get() > 0;
+        }
+
+        if (status == IdleStatus.READER_IDLE) {
+            return idleCountForRead.get() > 0;
+        }
+
+        if (status == IdleStatus.WRITER_IDLE) {
+            return idleCountForWrite.get() > 0;
+        }
+
+        throw new IllegalArgumentException("Unknown idle status: " + status);
+    }
+
+
+    /**
+     * {@inheritDoc}
+     */
+    public final boolean isBothIdle() {
+        return isIdle(IdleStatus.BOTH_IDLE);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final boolean isReaderIdle() {
+        return isIdle(IdleStatus.READER_IDLE);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final boolean isWriterIdle() {
+        return isIdle(IdleStatus.WRITER_IDLE);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final int getIdleCount(IdleStatus status) {
+        if (getConfig().getIdleTime(status) == 0) {
+            if (status == IdleStatus.BOTH_IDLE) {
+                idleCountForBoth.set(0);
+            }
+
+            if (status == IdleStatus.READER_IDLE) {
+                idleCountForRead.set(0);
+            }
+
+            if (status == IdleStatus.WRITER_IDLE) {
+                idleCountForWrite.set(0);
+            }
+        }
+
+        if (status == IdleStatus.BOTH_IDLE) {
+            return idleCountForBoth.get();
+        }
+
+        if (status == IdleStatus.READER_IDLE) {
+            return idleCountForRead.get();
+        }
+
+        if (status == IdleStatus.WRITER_IDLE) {
+            return idleCountForWrite.get();
+        }
+
+        throw new IllegalArgumentException("Unknown idle status: " + status);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public final long getLastIdleTime(IdleStatus status) {
+        if (status == IdleStatus.BOTH_IDLE) {
+            return lastIdleTimeForBoth;
+        }
+
+        if (status == IdleStatus.READER_IDLE) {
+            return lastIdleTimeForRead;
+        }
+
+        if (status == IdleStatus.WRITER_IDLE) {
+            return lastIdleTimeForWrite;
+        }
+
+        throw new IllegalArgumentException("Unknown idle status: " + status);
+    }
+
+    /**
+     * Increase the count of the various Idle counter
+     *
+     * @param status The current status
+     * @param currentTime The current time
+     */
+    public final void increaseIdleCount(IdleStatus status, long currentTime) {
+        if (status == IdleStatus.BOTH_IDLE) {
+            idleCountForBoth.incrementAndGet();
+            lastIdleTimeForBoth = currentTime;
+        } else if (status == IdleStatus.READER_IDLE) {
+            idleCountForRead.incrementAndGet();
+            lastIdleTimeForRead = currentTime;
+        } else if (status == IdleStatus.WRITER_IDLE) {
+            idleCountForWrite.incrementAndGet();
+            lastIdleTimeForWrite = currentTime;
+        } else {
+            throw new IllegalArgumentException("Unknown idle status: " + status);
+        }
     }
 
     public WriteRequestQueue getWriteRequestQueue() {
@@ -397,4 +649,6 @@ public class BaseSession implements IoSession{
                 ", writeRequestQueue=" + writeRequestQueue +
                 '}';
     }
+
+
 }
