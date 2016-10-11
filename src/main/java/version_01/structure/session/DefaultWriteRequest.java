@@ -49,4 +49,11 @@ public class DefaultWriteRequest implements WriteRequest {
         bufferMessageFiltered = byteBuffer;
     }
 
+    @Override
+    public String toString() {
+        return "DefaultWriteRequest{" +
+                "message=" + message +
+                ", bufferMessageFiltered=" + bufferMessageFiltered +
+                '}';
+    }
 }

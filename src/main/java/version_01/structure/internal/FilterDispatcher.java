@@ -6,6 +6,7 @@ import version_01.core.filter.executor.ExecutorFilter;
 import version_01.core.filter.protocol.InvalidProtocolViolation;
 import version_01.core.listener.SupportIoListener;
 import version_01.core.service.IoProcessor;
+import version_01.core.session.IdleStatus;
 import version_01.core.session.IoSession;
 import version_01.core.write.SessionCloseException;
 import version_01.core.write.WriteRequest;
@@ -88,6 +89,12 @@ public class FilterDispatcher implements SupportIoListener{
     @Override
     public int filterWrite(IoSession session, ByteBuffer buf) throws IOException {
         return sslFilterManager.filterWrite(session,buf);
+    }
+
+    @Override
+    public void fireSessionIdle(IoSession session,IdleStatus status) {
+        session.increaseIdleCount(status, System.currentTimeMillis());
+        LOG.info("Idle session.."+status);
     }
 
     /**

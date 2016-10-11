@@ -1,6 +1,7 @@
 package stress_clients;
 
 import com.google.protobuf.ByteString;
+import version_01.core.filter.protocol.InvalidProtocolViolation;
 import version_01.ssl.SslContextFactory;
 import version_01.structure.filters.protocol.ProtobufDecoderFilter;
 import version_01.structure.filters.protocol.ProtobufEncoderFilter;
@@ -83,6 +84,8 @@ public class NioSslPingClientTest extends Thread{
             }
         }catch (IOException e){
             e.printStackTrace();
+        } catch (InvalidProtocolViolation invalidProtocolViolation) {
+            invalidProtocolViolation.printStackTrace();
         } finally {
             try {
                 clientsOk++;

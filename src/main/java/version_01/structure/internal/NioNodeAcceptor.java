@@ -6,6 +6,7 @@ import version_01.core.conf.ServerPortConfiguration;
 import version_01.configuration.ServerPortType;
 import version_01.core.service.IoHandler;
 import version_01.core.service.IoService;
+import version_01.core.session.IoSessionConfig;
 import version_01.structure.session.BaseSession;
 import version_01.structure.session.DefaultSessionConfig;
 import version_01.structure.session.DefaultWriteRequestQueu;
@@ -51,8 +52,12 @@ public class NioNodeAcceptor {
     /** Type */
     private ServerPortType serverPortType;
 
+    /** Default session config for every channel in this acceptor*/
+    private IoSessionConfig sessionConfig;
+
     public NioNodeAcceptor(IoService ioService, ServerPortConfiguration serverPortConfiguration, ServerPortType serverPortType,IoHandler ioHandler) {
         this(ioService,serverPortConfiguration.getIoThreadsCount(),serverPortConfiguration,serverPortType,ioHandler);
+        this.sessionConfig = new DefaultSessionConfig();
     }
 
     public NioNodeAcceptor(IoService ioService, int threadsCount,ServerPortConfiguration serverPortConfiguration,ServerPortType serverPortType,IoHandler ioHandler) {
@@ -194,10 +199,15 @@ public class NioNodeAcceptor {
                         // increase the accepted count
                         acceptedCount++;
                         // here i can configure the socketChannel
-                        //do something..
+
+                        // Socket timeout, 1 min of inactivity
+                        socketChannel.socket().setSoTimeout(sessionConfig.getSocketTimeout());
+
+                        // Socket max read buffer
+                        socketChannel.socket().setReceiveBufferSize(sessionConfig.getSocketReadBufferSize());
 
                         // creo la session con configuracion por default y la cola de escritos por default
-                        BaseSession s = BaseSession.clientSessionFactory(serverPortType, socketChannel, ioHandler, new DefaultSessionConfig(), new DefaultWriteRequestQueu());
+                        BaseSession s = BaseSession.clientSessionFactory(serverPortType, socketChannel, ioHandler, sessionConfig, new DefaultWriteRequestQueu());
 
                         // seteo el procesador para la session
                         s.setProcessor(ioService.getIoProcessor());

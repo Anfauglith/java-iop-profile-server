@@ -48,4 +48,7 @@ public class IdentitiesDao {
         return identityView.getIdentityMap().containsKey(new IdentityKey(id));
     }
 
+    public void checkIn(String challenge) {
+
+    }
 }
